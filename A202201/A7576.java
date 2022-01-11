@@ -65,6 +65,7 @@ public class A7576 {
                 }
             }
         }
+        
         if(answer != -1) System.out.println(answer-1);
         else System.out.println(answer);
 
