@@ -3,16 +3,15 @@ package A202201;
 import java.io.*;
 import java.util.*;
 
-class Node{
-    int x;
-    int y;
-    public Node(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-}
-
 public class A1012 {
+    static class Node{
+        int x;
+        int y;
+        public Node(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
     private static int[] dx = {-1,0,1,0};
     private static int[] dy = {0,1,0,-1};
     private static int T,M,N,K,cnt = 0;

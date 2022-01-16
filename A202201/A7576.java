@@ -3,16 +3,16 @@ package A202201;
 import java.io.*;
 import java.util.*;
 
-class tomatoNode{
-    int x;
-    int y;
-    public tomatoNode(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-}
 
 public class A7576 {
+    static class tomatoNode{
+        int x;
+        int y;
+        public tomatoNode(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
     private static int dx[] = {-1,0,1,0};
     private static int dy[] = {0,1,0,-1};
     private static int N,M;
