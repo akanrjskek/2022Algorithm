@@ -19,7 +19,6 @@ public class A7576 {
     private static int[][] tomato;
     private static boolean[][] visit;
     private static Queue<tomatoNode> q;
-    private static int cnt = 1;
     private static int answer = 0;
     public static void main(String[] args) throws Exception{
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
