@@ -8,6 +8,15 @@ public class A2606 {
     private static Queue<Integer> q = new LinkedList<>();
     private static boolean[] visit;
 
+    private static void DFS(int index){
+        for(int i = 0; i < link[index].size(); ++i){
+            if(visit[link[index].get(i)]) continue;
+            visit[link[index].get(i)] = true;
+            DFS(link[index].get(i));
+            cnt++;
+        }
+    }
+
     private static void BFS(){
         q.add(1);
         visit[1] = true;
@@ -39,7 +48,8 @@ public class A2606 {
             link[x].add(y);
             link[y].add(x);
         }
-        BFS();
+        visit[1] = true;
+        DFS(1);
         System.out.println(cnt);
     }
     private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));

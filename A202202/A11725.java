@@ -1,4 +1,5 @@
 package A202202;
+<<<<<<< HEAD
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -49,4 +50,7 @@ public class A11725 {
     }
     private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer st;
+=======
+public class A11725 {
+>>>>>>> 2b0bf38 (mac)
 }

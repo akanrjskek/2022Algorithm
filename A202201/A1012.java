@@ -35,6 +35,16 @@ public class A1012 {
         }
     }
 
+    private static void DFS(int x, int y){
+        for(int i = 0; i < 4; ++i){
+            int tx = x + dx[i];
+            int ty = y + dy[i];
+            if(tx < 0 || ty < 0 || tx >= N || ty >= M || cabbage[tx][ty] == 0 || visit[tx][ty]) continue;
+            visit[tx][ty] = true;
+            DFS(tx,ty);
+        }
+    }
+
     public static void main(String[] args) throws Exception{
         T = Integer.parseInt(bf.readLine());
         for (int i = 0; i < T; i++) {
@@ -54,7 +64,9 @@ public class A1012 {
             for (int j = 0; j < N; j++) {
                 for (int k = 0; k < M; k++) {
                     if(cabbage[j][k] == 1 && !visit[j][k]){
-                        BFS(j,k);
+                        //BFS(j,k);
+                        visit[j][k] = true;
+                        DFS(j,k);
                         cnt++;
                     }
                 }
