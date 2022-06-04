@@ -1,7 +1,5 @@
 package A202203;
 
-import sun.java2d.pipe.AAShapePipe;
-
 import java.io.*;
 import java.util.*;
 

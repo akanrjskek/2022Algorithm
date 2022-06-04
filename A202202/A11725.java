@@ -1,5 +1,4 @@
 package A202202;
-<<<<<<< HEAD
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,28 +11,28 @@ public class A11725 {
     private static boolean[] visit;
     private static int[] parent;
 
-    private static void DFS(int n){
+    private static void DFS(int n) {
 
-        for(int i = 0; i < node[n].size(); ++i){
-            if(visit[node[n].get(i)]) continue;
+        for (int i = 0; i < node[n].size(); ++i) {
+            if (visit[node[n].get(i)]) continue;
             visit[node[n].get(i)] = true;
             parent[node[n].get(i)] = n;
             DFS(node[n].get(i));
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         N = Integer.parseInt(bf.readLine());
         node = new LinkedList[N + 1];
-        for(int i = 1; i < N + 1; ++i){
+        for (int i = 1; i < N + 1; ++i) {
             node[i] = new LinkedList<>();
         }
 
         parent = new int[N + 1];
         visit = new boolean[N + 1];
 
-        int n1,n2;
-        for(int i = 0; i <N - 1; ++i){
+        int n1, n2;
+        for (int i = 0; i < N - 1; ++i) {
             st = new StringTokenizer(bf.readLine());
             n1 = Integer.parseInt(st.nextToken());
             n2 = Integer.parseInt(st.nextToken());
@@ -48,9 +47,7 @@ public class A11725 {
 
 
     }
+
     private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer st;
-=======
-public class A11725 {
->>>>>>> 2b0bf38 (mac)
 }

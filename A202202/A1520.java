@@ -51,9 +51,5 @@ public class A1520 {
     }
     private static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer st;
-<<<<<<< HEAD
-}
-=======
-}
 
->>>>>>> 2b0bf38 (mac)
+}
